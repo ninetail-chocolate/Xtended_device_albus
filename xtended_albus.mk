@@ -19,7 +19,7 @@ $(call inherit-product, device/motorola/albus/device.mk)
 # Inherit some common Pixel Experience stuff.
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-XTENDED_MAINTAINER := Gion Yuki
+XTENDED_MAINTAINER := Gion_Yuki
 EXTRA_FOD_ANIMATIONS := true
 
 ## Device identifier. This must come after all inclusions
@@ -31,4 +31,6 @@ PRODUCT_MODEL := Moto Z2 Play
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="motorola/albus/albus:8.0.0/OPSS27.76-12-28-15/13:user/release-keys"
+    PRIVATE_BUILD_DESC="albus-user 8.0.0 OPSS27.76-12-25-3 4 release-keys"
+#Fingerprint
+BUILD_FINGERPRINT := "motorola/albus/albus:8.0.0/OPSS27.76-12-28-15/13:user/release-keys"
